@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--METADATOS-->
+    <meta charset="utf-8" />
+    <meta name="author" content="Rodrigo Rabanal Fernandez" />
+    <meta name="description" content="Portafolio de desarrollo de Rodrigo" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, QA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--TITULO-->
+    <title>Portafolio | Rodrigo</title>
+    <!--FAVICON-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="imagenes/icons8-laptop-50 (1).png"
+    />
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!--BOOTSTRAP ICON-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <!--BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img
+              src="imagenes/icons8-laptop-50 (1).png"
+              width="50"
+              alt="Logo de la página web"
+            />
+          </a>
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi"
+                >Sobre mí</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--SECCION HERO-->
+    <section class="hero align-items-stretch">
+      <div
+        class="hero-principal d-flex flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="hero-imagen-desarrollador rounded-circle"
+          src="imagenes/desarrollador2.svg"
+          alt="Foto digital"
+        />
+        <h1>Rodrigo Fernandez</h1>
+        <h2>Quality Assurance</h2>
+      </div>
+      <div class="hero-inferior">
+        <img
+          class="hero-inferior-imagen img-fluid"
+          src="imagenes/Tecnologias12.png"
+          alt="monito laptop"
+        />
+      </div>
+    </section>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Rodrigo</h2>
+        <p class="seccion-texto">
+          Tengo 25 años amante del café y el deporte, soy de las personas que consideran que
+          la calidad y los detalles son esenciales en cada aspecto de la vida, por eso encontré
+          en Testing lo que mas disfruto hacer que es poner atención en los detalles y proporcionar al
+          cliente la mejor experiencia a mi alcance. <br> 
+          Podes mirar las certificaciones que consegui de cada area a continuación.
+      </div>
+    </section>
+    <!--EXPERIENCIA-->
+    <section id="experiencia" class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!--Desarrollo Web-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>
+              Si bien para hacer Testing manual no se necesita saber código, es imposible que
+              al entrar en este mundo no quieras aprender todo lo que lo conforma. 
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">Bootstrap</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+            </div>
+          </div>
+          <!--Testing-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-search"></i>
+            <p class="experiencia-titulo">Testing</p>
+            <p>
+              Hacer las cosas bien es lo que se espera, pero hacer productos
+              calidad es arte.
+            </p>
+            <div class="badges-contenedor">
+              <a href="https://www.linkedin.com/learning/certificates/dc282f5830999940505869ffb9cb4f1d47d05f7ef4fa5684102acfbf6f1cbddd"
+                target="_blank" rel="noopener noreferrer">
+                <span class="badge text-bg-primary">JIRA Software</span>
+              </a>
+              <a href="https://api.educacionit.com/pdf/certificados/rodrigo-rabanal-845995/57472"
+                target="_blank" rel="noopener noreferrer">
+                <span class="badge text-bg-primary">Testing Magnament</span>
+              </a>
+              <a href="https://www.coderhouse.com/certificados/62b3caac2a7d8700273b5d37" target="_blank"rel="noopener noreferrer">
+                <span class="badge text-bg-primary">QA - Manual</span>
+              </a>
+              <span class="badge text-bg-primary">SQL</span>
+              <span class="badge text-bg-primary">API Test</span>
+            </div>
+          </div>
+          <!--Estudiante-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-book-half"></i>
+            <p class="experiencia-titulo">Académico</p>
+            <p>
+              Las habiliades técnicas son tan importantes como las habilidades sociales en un entorno laboral confortable.
+            </p>
+            <div class="badges-contenedor">
+              <a href="https://www.linkedin.com/learning/certificates/a688391a411d9b05394c31ae6635eb5753465359768c55d1864066380f4fb4db" target="_blank" rel="noopener noreferrer">
+                <span class="badge text-bg-primary">Fundamentos de la programación</span>
+              </a>
+              <a href="https://www.linkedin.com/learning/certificates/a1ab54ba6f2f23bf9822d001d31f31d5b31bc027d4adfead67bb8f13a06e786d" target="_blank" rel="noopener noreferrer">
+                <span class="badge text-bg-primary">SCRUM</span>
+              </a>
+              <a href="https://www.linkedin.com/learning/certificates/ac52be75cf68c5dd7a3a2bae4d040d6b6491f8d687834f171dd961f3dc11fb5a" target="_blank" rel="noopener noreferrer">
+                <span class="badge text-bg-primary">Soft Skills</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PROYECTOS-->
+    <section
+      id="proyectos"
+      class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis Proyectos</h2>
+      <h3 class="seccion-descripcion">
+        Estos son los proyectos que creé recientemente
+      </h3>
+      <!--Galeria de proyectos-->
+      <div class="container text-center proyecto-contenedor">
+        <div class="row">
+          <!--proyecto 1-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto 1.png" alt="Proyecto1" />
+              <div class="overlay">
+                <p>|Portfolio Responsive|</p>
+                <div class="iconos-contenedor justify-content-center">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--proyecto 2-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/jira-software-1024x536.png" alt="Proyecto2" />
+              <div class="overlay">
+                <p>|Documentación Jira|</p>
+                <div class="iconos-contenedor justify-content-center">
+                  <a
+                    href="https://id.atlassian.com/invite/p/jira-software?id=mvnt3jO9STKNEeYRLdEgmg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-browser-chrome"></i>
+                  </a>
+                  <a
+                    href="indexx.html"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="bi bi-browser-chrome"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--proyecto 3-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/technology.jpg" alt="Proyecto3" />
+              <div class="overlay">
+                <p>Proyecto 3 en construccion, web resposiva con JS</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-browser-chrome"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--proyecto 4
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/technology (1).jpg" alt="Proyecto4" />
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-browser-chrome"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <!--proyecto 5
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/business.jpg" alt="Proyecto5" />
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-browser-chrome"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <!--proyecto 6
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/nature.jpg" alt="Proyecto6" />
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-browser-chrome"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+    <!--CONTACTO-->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div
+          class="container text-center d-flex rectangulo justify-content-evenly"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">¡Hablemos!</div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para asegurar la calidad de tu software
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:rabanalfernandezrodrigo@gmail.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope"></i>
+                </button>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=541123148968&text=Rodrigo+" target="_blank">
+                <button type="button">
+                  WhatsApp
+                  <i class="bi bi-whatsapp"></i>
+                </button>
+              </a>
+              <a href="https://www.linkedin.com/in/rodrigo-rabanal-fernandez-b82662215" target="_blank">
+                <button type="button">
+                  Linkedin
+                  <i class="bi bi-linkedin"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer
+      class="seccion-oscura d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        class="footer-icono"
+        src="imagenes/icono-blanco.svg"
+        alt="imagen-footer"
+      />
+      <p class="footer-texto text-center footer-texto">
+        ¡Hagamos un excelente producto juntos! <br>
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

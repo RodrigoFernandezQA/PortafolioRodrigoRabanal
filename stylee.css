@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1b1b32;
+}
+
+.h3g {
+  display: flex;
+  padding: 50px;
+  font-family: 'Rubik Dirt', cursive;
+  color: antiquewhite;
+  text-align: center;
+}
+
+body {
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.container-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(6,1fr);
+  grid-template-areas: 
+  "img1 img2 img3 img3 img3"
+  "img1 img2 img3 img3 img3"
+  "img4 img4 img3 img3 img3"
+  "img4 img4 img3 img3 img3"
+  "img6 img6 img5 img5 img5"
+  "img6 img6 img5 img5 img5";
+  gap: 5px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: filter .5s;
+}
+
+.img-1 {
+  grid-area: img1;
+}
+
+.img-2 {
+  grid-area: img2;
+}
+
+.img-3 {
+  grid-area: img3;
+}
+
+.img-4 {
+  grid-area: img4;
+}
+
+.img-5 {
+  grid-area: img5;
+}
+
+.img-6 {
+  grid-area: img6;
+}
+
+.container-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%);
+  background: #1b1b32c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .3s ease-in;
+}
+
+.move {
+  transform: translateX(0%);
+}
+
+.img-show {
+  height: 80%;
+  display: block;
+  object-fit: cover;
+}
+
+.copy {
+  position: fixed;
+  color: white;
+  bottom: 40px;
+}
+
+.bi.bi-x-square {
+  position: absolute;
+  color: white;
+  top: 20px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
